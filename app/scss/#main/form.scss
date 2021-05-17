@@ -1,0 +1,78 @@
+.form {
+    max-width: 436px;
+    margin: 0 auto;
+    &__manage {
+        margin-bottom: 25px;
+    }
+    &__label {
+        display: block;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-title {
+            display: block;
+            margin-bottom: 3px;
+            padding-left: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        input[type="text"],
+        input[type=date] {
+            width: 100%;
+            padding: 9px 20px;
+            background: #fff;
+            border: 1px solid #D2D2D2;
+            box-sizing: border-box;
+            border-radius: 39px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            outline: none;
+            &::placeholder {
+                color: #CECECE;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        background: #EFDB5E;
+        border-radius: 19px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $textColor;
+        text-transform: uppercase;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .form {
+        &__manage {
+            margin-bottom: 30px;
+        }
+        &__label {
+            margin-bottom: 24px;
+            input[type="text"],
+            input[type=date] {
+                padding: 15px 25px;
+            }
+        }
+        &__btn {
+            padding: 18px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

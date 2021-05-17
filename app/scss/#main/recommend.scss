@@ -1,0 +1,41 @@
+.recommend {
+    padding: 20px 0;
+    margin: 22px 0;
+    background: rgba(#FFEAEA, 0.8);
+    box-shadow: 0px 4px 25px rgba(173, 173, 173, 0.25);
+    border-radius: 21px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    p {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__about {
+        color: $textColor;
+        font-weight: bold;
+        .zodiac__sign {
+            color: $textColor;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .recommend {
+        max-width: 1320px;
+        padding: 30px;
+        margin: 26px auto;
+        &__inner {
+            max-width: 870px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}

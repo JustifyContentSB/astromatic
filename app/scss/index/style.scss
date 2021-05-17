@@ -1,6 +1,24 @@
 @import '../../../node_modules/normalize.css/normalize';
-
+@import '../#base/vars.scss';
 @import '../#base/base.scss';
 @import '../#base/fonts.scss';
 @import '../#base/body.scss';
-
+@import '../#main/wrapper.scss';
+@import '../#main/container.scss';
+@import '../#main/text.scss';
+@import '../#main/strong.scss';
+@import '../#main/title.scss';
+@import '../#main/sec-title.scss';
+@import '../#main/header.scss';
+@import '../#main/form.scss';
+@import '../#main/weight.scss';
+@import '../#main/zodiac.scss';
+@import '../#main/words.scss';
+@import '../#main/plan.scss';
+@import '../#main/astrologer.scss';
+@import '../#main/recommend.scss';
+@import '../#main/orsofit.scss';
+@import '../#main/about.scss';
+@import '../#main/slick.scss';
+@import '../#main/result.scss';
+@import '../#main/footer.scss';

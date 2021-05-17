@@ -1,0 +1,17 @@
+.text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    &__alert {
+        color: #F3E365;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

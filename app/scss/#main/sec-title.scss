@@ -1,0 +1,62 @@
+.sec-title {
+    max-width: 694px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    color: $textColor;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    &__rhombus {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-10px);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 94px;
+            height: 1px;
+            background: $textColor;
+            bottom: 14px;
+            left: -100px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 94px;
+            height: 1px;
+            background: $textColor;
+            bottom: 14px;
+            right: -100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sec-title {
+        padding-bottom: 55px;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        &__rhombus {
+            img {
+                width: 26px;
+            }
+            &::before,
+            &::after {
+                width: 120px;
+                bottom: 18px;
+            }
+            &::before {
+                left: -130px;
+            }
+            &::after {
+                right: -130px;
+            }
+        }
+    }
+}

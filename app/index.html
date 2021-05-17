@@ -8,12 +8,378 @@
     <title>Astromatic</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/libs/slick/slick.css">
     <link rel="stylesheet" href="css/index/style.min.css">
 </head>
 
 <body>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dolores?</p>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner container">
+                <div class="header__top">
+                    <a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="astromatic" width="184" height="29"></a>
+                </div>
+                <div class="header__bottom text">
+                    <h2 class="header__title title">Если бы было <strong>так легко похудеть</strong>, просто занимаясь физическими упражнениями или соблюдая диету...</h2>
+                    <div class="header__info">
+                        <div class="header__info-text">
+                            <p class="header__descr">большинство из нас уже достигли бы своей цели. Но что происходит в реальности? Вы садитесь на диету, лишние килограммы теряются быстро, но затем возвращаются, да еще и плюсом. И этот цикл повторяется снова и снова.</p>
+                            <strong class="header__strong strong">Почему?</strong>
+                            <p>Очень часто причины излишнего веса и трудности с похудением связаны с особенностями вашего знака Зодиака. Поэтому в деле похудения пригодится помощь астрологии. Например, вы знали, что на процесс потери килограммов влияет даже
+                                тот факт, в какой день недели вы родились? Вряд ли. А зря, так как у каждого знака Зодиака есть свои нюансы, которые нужно учитывать, чтобы добиться желаемого веса.</p>
+                        </div>
+                        <img class="header__magic" src="images/header/hands.png" alt="astromatic">
+                    </div>
+                    <p class="header__diet text">Сочетание традиционных методов похудения с учетом особых черт вашего знака Зодиака - это самый эффективный способ справиться с лишним весом. <span class="text__alert">Похудение по гороскопу в разы эффективнее и легче, чем вы можете себе представить</span>                        А популярные диеты, к сожалению, зачастую предлагают такие рационы питания, которые для некоторых знаков недопустимы. Поэтому всем, кто желает похудеть, следует придерживаться индивидуальных астрологических рекомендаций.</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="weight">
+                <div class="weight__inner container">
+                    <h2 class="weight__title sec-title">Узнайте, как ваша зодиакальная энергия может облегчить достижение вашей цели и обрести идеальный вес <span class="sec-title__rhombus"><img src="images/icons/rhombus.svg" alt="ромб" width="20"></span></h2>
+                    <form class="form" action="#">
+                        <div class="form__manage">
+                            <label class="form__label">
+                            <span class="form__label-title">Дата и Год Рождения</span>
+                            <input type="date">
+                        </label>
+                        </div>
+                        <button class="form__btn" type="submit">узнать</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="zodiac">
+                <div class="zodiac__inner container">
+                    <h2 class="zodiac__title title">По гороскопу Вы – <strong class="zodiac__sign">Телец</strong></h2>
+                    <div class="zodiac__img"><img src="images/zodiac/телец.svg" alt="телец"></div>
+                    <p class="zodiac__text words">Этот знак зодиака любит вкусно поесть, причем обед должен быть из трех блюд, а ужин <strong class="zodiac__sign">ТЕЛЬЦЫ</strong> никогда не отдаст врагу. Кроме того, <strong class="zodiac__sign">ТЕЛЬЦЫ</strong> предпочитают комфорт,
+                        диванный образ жизни, а еще у них замедленный обмен веществ. Поэтому им очень легко поправиться. <br> Звезды говорят, что Вы не сможете добиться желаемого веса, если оставите все как есть. <strong>Вам грозит ожирение. У вас сейчас неправильный
+                        путь в борьбе с килограммами.</strong> Он вам не нравится, и вы пытаетесь его изменить или найти помощь от того, кто может это сделать. <br> По звездной карте четко видно, что у вас <strong class="zodiac__month">В ИЮНЕ</strong>                        будет возможность изменить всю жизнь: добиться желаемого веса и свернуть с черной полосы на белую, до конца жизни.
+                    </p>
+                </div>
+            </section>
+
+            <section class="plan">
+                <div class="plan__inner container">
+                    <h2 class="plan__title sec-title">Узнайте, как ваша зодиакальная энергия может облегчить достижение вашей цели и обрести идеальный вес <span class="sec-title__rhombus"><img src="images/icons/rhombus.svg" alt="ромб" width="20"></span></h2>
+                    <form class="plan__form" action="#">
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">1. На сколько килограмм Вы хотите похудеть?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label">
+                                    <input type="radio" name="kgLoss" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">До 5 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="kgLoss">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">От 5 до 10 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="kgLoss">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">От 10 до 15 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="kgLoss">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Больше 15 кг</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">2. Какие части Вашего тела требуют коррекции?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label">
+                                    <input type="radio" name="correction" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Талия и живот</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="correction">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Бедра и ягодицы</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="correction">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Руки или ноги</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="correction">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Я хочу похудеть везде</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">3. Насколько активный образ жизни Вы ведете?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label">
+                                    <input type="radio" name="lifestyle" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Тренируюсь 3-5 раз в неделю</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="lifestyle">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Тренируюсь 1-3 раза в неделю</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="lifestyle">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Не тренируюсь, но стараюсь ходить пешком</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="lifestyle">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Малоподвижный образ жизни</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">4. Вы правильно питаетесь?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label"> 
+                                    <input type="radio" name="nutrition" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Да, считаю калории, не ем сладкое и мучное</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="nutrition">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Где-то 50/50</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="nutrition">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Люблю “вредненькое”, фастфуд, сладости</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="nutrition">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Питаюсь неправильно</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">5. Ваш возраст?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label"> 
+                                    <input type="radio" name="age" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">До 20 лет</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="age">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">20-30 лет</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="age">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">31-40 лет</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="age">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">41-50 лет</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="age">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Старше 50 лет</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">6. Ваш текущий вес?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label"> 
+                                    <input type="radio" name="weight" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">До 60 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="weight">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">От 60 до 70 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="weight">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">От 71 до 80 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="weight">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">От 81 до 90 кг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="weight">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Более 90 кг</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="plan__form-question">
+                            <h2 class="plan__form-title">7. Ваш рост?</h2>
+                            <div class="plan__form-inputs">
+                                <label class="plan__form-label"> 
+                                    <input type="radio" name="height" checked>
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Ниже 150 см</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="height">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">150-160 см</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="height">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">161-170 см</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="height">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">171-180 смг</span>
+                                </label>
+                                <label class="plan__form-label">
+                                    <input type="radio" name="height">
+                                    <span class="plan__form-radio"></span>
+                                    <span class="plan__form-text">Выше 180 см</span>
+                                </label>
+                            </div>
+                            <button class="form__btn" type="submit">узнать</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="astrologer">
+                <div class="astrologer__inner container">
+                    <h2 class="astrologer__title title">
+                        Здравствуйте, меня зовут Оксана Юнусовна Демичева. <strong>Я диетолог-астролог, нутрициолог, врач интегративной медицины.</strong> Добро пожаловать на мой сайт.
+                    </h2>
+                    <img class="astrologer__pic" src="images/astrologer/woman.jpg" alt="астролог">
+                    <div class="astrologer__text words">
+                        <p>Здесь я провожу бесплатную онлайн-диагностику и даю астрологические рекомендации, исходя из вашего знака Зодиака, которые помогли избавиться от лишнего веса тысячам моих пациентов.</p>
+                        <p>Спасибо за ваши ответы. У Вас действительно есть лишний вес, но Вы вполне можете добиться желаемой цели в похудении, используя астродиету. <strong>Основная причина вашего ЛИШНЕГО ВЕСА – замедленный метаболизм.</strong> Это характерно
+                            в особенности для вашего знака Зодиака <strong class="zodiac__sign">ТЕЛЕЦ</strong>.</p>
+                        <p>Просматривая Вашу Зодиакальную карту, я удивляюсь тому, каким образом Вам до сих пор удавалось избегать серьезных проблем со здоровьем, постоянно сидя на диетах. Звезды не рекомендуют Вам ограничивать себя в еде, а также подсчитывать
+                            калории. Большую часть пищи надо употреблять после полудня, но не вечером. По астрологическому прогнозу, Вы не сможете выбраться из этого порочного круга “диета-сброс веса-набора веса”, если продолжите худеть по диетам, не
+                            учитывающим особенности ваш знак Зодиака.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommend">
+                <h2 class="visually-hidden">Орсофит</h2>
+                <div class="recommend__inner container">
+                    <p><span class="recommend__about">Рекомендация лично для Вас как для <span class="zodiac__sign">ТЕЛЬЦА</span>.</span> Пейте отвар из зелёного чая, спирулины, гуараны и L-карнитин. </p>
+                    <p>Спирулина выводит тяжелые металлы, нормализует обменные процессы в организме Зеленый чай – природный антиоксидант, стимулирует иммунитет и выводит шлаки.</p>
+                    <p>Гуарана ускоряет метаболизм, обладает мощным жиросжигающим свойством.</p>
+                </div>
+            </section>
+
+            <section class="orsofit">
+                <h2 class="visually-hidden">Что употреблять для похудения</h2>
+                <div class="orsofit__inner container">
+                    <div class="orsofit__text">
+                        <p><span class="zodiac__sign">ТЕЛЬЦАМ</span> для похудения обязательно нужно употреблять L-карнитин. Он усиливает действие остальных компонентов и выступает одним из мощных жиросжигателей <br> Перечисленные компоненты можно употреблять
+                            по отдельности, но <span>гораздо удобнее и эффективнее в составе комплекса «Орсофит».</span> В нем они присутствуют в виде интенсивных экстрактов с максимальной концентрацией полезных веществ. <br> Для заметного снижения массы
+                            тела достаточно выпивать 1 таблетку в день. И уже через месяц Вы сможете достигнуть своей цели.
+                        </p>
+                        <p><b>Вот так он выглядит:</b></p>
+                    </div>
+                    <div class="orsofit__img"><img src="images/orsofit/orsofit.png" alt="Орсофит"></div>
+                </div>
+            </section>
+
+            <section class="about">
+                <h2 class="visually-hidden">Содержание</h2>
+                <div class="about__inner container">
+                    <div class="about__text text">
+                        В средстве содержатся максимально концентрированные вытяжки природных жиросжигателей, которые запускают процесс жиросжигания и не дают ему остановиться. <br> Поэтому <strong class="text__alert">«Орсофит»</strong> так эффективен
+                        для
+                        <span class="zodiac__sign">ТЕЛЬЦОВ</span>. Препарат расщепляет и выводит висцеральный жир, который обволакивает стенки внутренних органов и мешает им нормально функционировать, разблокирует метаболизм за счет очищения организма
+                        от шлаков и токсинов. <br> В результате, организм начинает сам избавляться от лишнего жира, используя его как источник энергии. <strong class="text__alert">Вы начинаете меньше есть, не ощущая при этом голода, что еще больше усиливает эффект похудения!</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="result">
+                <div class="result__inner container">
+                    <h2 class="result__title sec-title">Вот результаты моих клиенток, которые успешно похудели с помощью моих <br> астро-рекомендаций: <span class="sec-title__rhombus"><img src="images/icons/rhombus.svg" alt="ромб" width="20"></span></h2>
+                    <ul class="result__slider">
+                        <li class="result__item">
+                            <img class="result__pic" src="images/result/result-1.jpg" alt="автор отзыва">
+                            <span class="result__name">ЛАРИСА ГОРЮВНАЯ</span>
+                            <p class="result__text">Начала пить, ела все, что нравится, при этом похудела на 9 кг. Я считаю, что ORSOFIT для похудения самое лучшее среди того что я встречала, а что самое прекрасное - не надо гробить себя в спортзале, нету на это время и желания.
+                                Такое решение для таких, как я, просто идеально! Рекомендую!</p>
+                        </li>
+                        <li class="result__item">
+                            <img class="result__pic" src="images/result/result-2.jpg" alt="автор отзыва">
+                            <span class="result__name">ВИКТОР ЛОПУХ</span>
+                            <p class="result__text">Перед началом приема этого средства я весил 90 кг. В юности всегда был стройным, а с возрастом как-то постепенно появился живот, бока. В 35 лет понял, что нужно срочно приводить себя в порядок. Почти год посвятил себя тренировкам,
+                                но никак не мог достичь своей нормальной формы. Потом добавил в рацион ORSOFIT и буквально за несколько недель превратился в того человека, которого помню с юности. Теперь берегу свою фигуру, а ORSOFIT у меня всегда стоит
+                                в запасе.</p>
+                        </li>
+                        <li class="result__item">
+                            <img class="result__pic" src="images/result/result-3.jpg" alt="автор отзыва">
+                            <span class="result__name">АНГЕЛИНА ТОРКО</span>
+                            <p class="result__text">Это нереальное ощущение, когда ты чего-то очень хотела, но думала, что это практически невозможно. А тут такое чудо. Я уже похудела на 10 килограммов и продолжаю теми же темпами. Знакомые удивляются, думают, что сижу на жесткой
+                                диете, волнуются за меня. А я ничего им не рассказываю, пусть гадают)))))</p>
+                        </li>
+                    </ul>
+                    <div class="result__footer">
+                        <p>Оптимальная продолжительность курса, которая учитывает Ваш возраст, текущий индекс массы тела и образ жизни, в среднем будет составлять около 60 дней <br> За это время произойдет глубокое очищение организма и нормализация метаболизма.</p>
+                        <p class="result__prize">А ещё у меня для Вас отличные новости. <b>Вы прошли онлайн-диагностику и стали моим 2-тысячным клиентом!</b></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <h2 class="footer__title title">Вы можете получить <strong>«Орсофит» по акции!</strong></h2>
+                <div class="footer__orsofit">
+                    <img src="images/orsofit/orsofit.png" alt="орсофит">
+                    <span class="footer__orsofit-percent"><img src="images/icons/percent.svg" alt="скидка"></span>
+                </div>
+                <p class="footer__text text">Для этого впишите своё имя и номер телефона в форму заказа ниже. <span class="text__alert">Количество упаковок по акции ограничено,</span> поэтому рекомендую поспешить с заказом. И помните, что согласно Звездной карте самое лучшее время
+                    для прохождения курса – <strong class="footer__month">ИЮЛЬ</strong>
+                </p>
+                <form class="form" action="#">
+                    <div class="form__manage">
+                        <label class="form__label">
+                            <span class="form__label-title">Имя</span>
+                            <input type="text" name="name">
+                        </label>
+                        <label class="form__label">
+                            <span class="form__label-title">Номер телефона</span>
+                            <input type="text" placeholder="+7" name="phone">
+                        </label>
+                    </div>
+                    <button class="form__btn" type="submit">ЗАКАЗАТЬ</button>
+                    <div class="footer__info">
+                        <p> <span class="footer__people">238 903</span> людей заказало “Орсофит”</p>
+                        <p>Осталось <span class="footer__pack">17</span> пачек</p>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

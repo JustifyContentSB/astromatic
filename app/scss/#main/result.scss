@@ -1,0 +1,106 @@
+.result {
+    padding: 33px 0;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__slider {
+        margin-bottom: 30px;
+    }
+    &__item {
+        padding: 33px 15px 20px;
+        background: #F7F4FB;
+        box-shadow: 0px 4px 12px rgba(210, 210, 210, 0.25);
+        border-radius: 25px;
+    }
+    &__pic {
+        display: block;
+        width: 115px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        border-radius: 50%;
+    }
+    &__name {
+        margin-bottom: 10px;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__footer {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+    &__prize {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .result {
+        &__name {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .result {
+        padding: 54px 0 45px;
+        &__footer {
+            max-width: 1064px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__prize {
+            margin-top: 20px;
+            padding: 0 50px;
+            b {
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+        .slick-track {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+        .slick-slide {
+            height: auto;
+        }
+        &__item {
+            padding: 30px 25px;
+            width: 393px;
+            min-width: 393px;
+            max-width: 393px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        &__pic {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .result {
+        .slick-track {
+            max-width: 1270px;
+        }
+        &__item {
+            margin-right: 44px;
+        }
+    }
+}

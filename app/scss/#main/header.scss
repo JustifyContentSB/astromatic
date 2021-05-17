@@ -1,0 +1,96 @@
+.header {
+    background: $textColor url('../../images/header/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    &__inner {
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+    &__top {
+        margin-bottom: 24px;
+    }
+    &__title {
+        position: relative;
+        z-index: 5;
+    }
+    &__info {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        display: inline-block;
+    }
+    &__magic {
+        max-width: 500px;
+        margin: 8px auto 20px;
+        order: -1;
+    }
+    &__descr {
+        margin-bottom: 15px;
+    }
+    &__strong {
+        display: block;
+        margin-bottom: 7px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        padding: 40px 60px 73px;
+        &__inner {
+            max-width: 1070px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        &__logo {
+            width: 406px;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            width: 680px;
+            margin: 0 auto;
+            margin-bottom: 35px;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+        &__info {
+            max-width: 1070px;
+            margin-bottom: 35px;
+            flex-direction: row;
+            align-items: center;
+            &-text {
+                max-width: 592px;
+            }
+        }
+        &__descr {
+            margin-bottom: 35px;
+        }
+        &__strong {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+        }
+        &__magic {
+            order: 0;
+            margin: 0;
+            margin-top: -60px;
+        }
+        &__diet {
+            max-width: 985px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        &__top {
+            margin-bottom: 64px;
+        }
+    }
+}

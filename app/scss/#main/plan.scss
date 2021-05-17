@@ -1,0 +1,111 @@
+.plan {
+    padding: 30px 0;
+    &__title {
+        margin-bottom: 23px;
+    }
+    &__form {
+        max-width: 436px;
+        margin: 0 auto;
+        &-question {
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-title {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $textColor;
+        }
+        &-label {
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            input {
+                display: none;
+                &:checked~.plan__form-radio::after {
+                    display: block;
+                }
+                &:checked~.plan__form-text {
+                    font-weight: bold;
+                }
+            }
+        }
+        &-radio {
+            display: block;
+            width: 26px;
+            min-width: 26px;
+            height: 26px;
+            margin-right: 13px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background: #000;
+                display: none;
+            }
+        }
+        &-text {
+            width: calc(100% - 40px);
+            margin-top: 3px;
+        }
+        &-inputs {
+            margin-bottom: 23px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .plan {
+        padding: 80px 0 40px;
+        &__title {
+            margin-bottom: 27px;
+        }
+        &__form {
+            &-label {
+                align-items: center;
+                margin-bottom: 13px;
+            }
+            &-title {
+                margin-bottom: 28px;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                letter-spacing: 0.05em;
+            }
+            &-radio {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+                &::after {
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+            &-text {
+                width: calc(100% - 60px);
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}

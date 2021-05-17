@@ -1,0 +1,25 @@
+.words {
+    max-width: 285px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    color: #fff;
+    font-weight: 500;
+    strong {
+        font-weight: 700;
+        color: $accent;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .words {
+        max-width: 808px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .words {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

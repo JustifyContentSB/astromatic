@@ -1,0 +1,46 @@
+.astrologer {
+    padding: 45px 0;
+    background: url('../../images/zodiac/zodiac-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__pic {
+        width: 174px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 50%;
+    }
+    &__text {
+        p {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .astrologer {
+        padding: 45px 0 60px;
+        padding-left: calc((100% - 1080px) / 2);
+        &__title {
+            max-width: 790px;
+            margin-left: 130px;
+            margin-bottom: 30px;
+        }
+        &__pic {
+            margin-bottom: 30px;
+            margin-left: 420px;
+        }
+        &__text {
+            max-width: 984px;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

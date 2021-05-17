@@ -1,0 +1,44 @@
+.slick {
+    &-arrow {
+        display: none !important;
+    }
+    &-dots {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        li {
+            margin-right: 18px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.slick-active {
+                button {
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+        button {
+            font-size: 0;
+            display: block;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid $textColor;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 17px;
+                height: 17px;
+                background: $textColor;
+                border-radius: 50%;
+                display: none;
+            }
+        }
+    }
+}

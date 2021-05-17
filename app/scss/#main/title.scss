@@ -1,0 +1,19 @@
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    strong {
+        color: $accent;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
